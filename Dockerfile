@@ -11,4 +11,4 @@ COPY ambari-conf/ambari.properties ambari-conf/password.dat /etc/ambari-server/c
 
 COPY id_rsa id_rsa.pub /root/.ssh/
 
-RUN chmod 644 /root/.ssh/id_rsa.pub
+RUN chmod 644 /root/.ssh/id_rsa.pub && chmod 600 /root/.ssh/id_rsa
